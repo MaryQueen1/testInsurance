@@ -1,6 +1,6 @@
 import UserDetail from "@/components/UserDetail.vue";
 import UsersList from "@/components/UsersList.vue";
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
   {
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(), // Используем history API
+  history: createWebHashHistory(), // Используем history API
   routes,
 });
 
